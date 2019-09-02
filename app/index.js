@@ -12,7 +12,7 @@ const encrypt = ({ message, secret }) => {
   let encrypted = cipher.update(message, 'utf8', 'hex');
   encrypted += cipher.final('hex');
 
-  return encrypted;
+  return 0;
 };
 
 const decrypt = ({ message, secret }) => {
